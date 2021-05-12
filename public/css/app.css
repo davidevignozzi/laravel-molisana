@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  padding: 30px 0;
+  text-align: center;
+}
+.logo img {
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+}
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.main-nav ul a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px;
+}
+.main-nav ul .active a {
+  background-color: #b2e5fc;
+}
+
+.mobile-div {
+  display: none;
+  margin: 15px 0;
+}
+@media screen and (max-width: 768px) {
+  .mobile-div {
+    display: block;
+  }
+}
+.mobile-div .hamburger-menu {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin-top: 13px;
+  margin-bottom: 30px;
+  background: url(../images/fondo-pag-speciali.jpg);
+}
+main section {
+  padding: 15px 0;
+}
+main section h2 {
+  color: #002d73;
+}
+main section .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section .cards .single-card {
+  width: calc((100% / 3) - 20px);
+  margin: 10px;
+}
+@media screen and (max-width: 768px) {
+  main section .cards .single-card {
+    width: calc((100% / 2) - 20px);
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 481px) {
+  main section .cards .single-card {
+    width: 100%;
+    margin: 10px;
+  }
+}
+main section .cards img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+footer .main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  footer .main-footer {
+    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+}
+footer .main-footer ul {
+  list-style: none;
+}
+footer .main-footer ul li {
+  color: #848d9b;
+}
+footer .main-footer ul li h3 {
+  padding: 20px 0;
+}
+footer .main-footer ul li a {
+  text-decoration: none;
+  color: #848d9b;
+}
+footer .footer-pic {
+  height: 200px;
+  background: url(../images/footer-montagne-bottom.jpg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+.product {
+  margin: 15px 0;
+  padding: 15px 0;
+  background-color: #b7dae5;
+}
+.product h1 {
+  color: #002d73;
+  text-align: center;
+}
+.product p {
+  color: #002d73;
+}
+@media screen and (max-width: 768px) {
+  .product p {
+    margin: 0 10px;
+  }
+}
+.product img {
+  width: 100%;
+}

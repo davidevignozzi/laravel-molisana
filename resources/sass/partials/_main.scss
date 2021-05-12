@@ -1,0 +1,40 @@
+main{
+    margin-top: 13px;
+    margin-bottom: 30px;
+    background: url(../images/fondo-pag-speciali.jpg);
+
+    section{
+        padding: 15px 0;
+
+        h2{
+            color: $brandColor;
+        }
+
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+        
+            .single-card{
+                width: calc((100% / 3) - 20px);
+                margin: 10px;
+
+                @media screen and (max-width: 768px) {
+                    width: calc((100% / 2) - 20px);
+                    margin: 10px;
+                }
+
+                @media screen and (max-width: 481px) {
+                    width: 100%;
+                    margin: 10px;
+                }
+
+            }
+        
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

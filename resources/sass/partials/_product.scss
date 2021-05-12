@@ -1,0 +1,22 @@
+.product{
+
+    margin: 15px 0;
+    padding: 15px 0;
+    background-color: $productBg;
+    
+    h1{
+        color: $brandColor;
+        text-align: center;
+    }
+
+    p{
+        color: $brandColor;
+        @media screen and (max-width: 768px) {
+            margin: 0 10px;
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+}

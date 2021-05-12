@@ -1,0 +1,36 @@
+footer{
+    .main-footer{
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            justify-content: left;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 10px;
+        }
+
+        ul{
+            list-style: none;
+            li{
+                color: $textColor;
+
+                h3{
+                    padding: 20px 0;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $textColor;
+                }
+            }
+        }
+    }
+
+    .footer-pic{
+        height: 200px;
+        background: url(../images/footer-montagne-bottom.jpg);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+    }
+}
